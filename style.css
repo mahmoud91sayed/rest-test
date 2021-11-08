@@ -1,0 +1,196 @@
+body{
+    
+    background-image: url("topography.svg") , linear-gradient(110deg, #f93d66, #6d47d9);;
+    padding: 20px;
+}
+
+
+.nav-bar{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+/*    border: 2px solid green;*/
+}
+
+.item{
+    background-color: gold;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    font-weight: bolder;
+    box-shadow: 2px 2px 2px gray    ;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+        
+}
+
+
+.view{
+display: grid;
+grid-template-columns: 70% 30% ;
+grid-template-rows:  repeat(2 , 200px);
+margin: 40px 0px 0px 0 ;
+/*border: blue 2px solid;*/
+
+
+
+    
+
+}
+
+.view-img{
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+    /*border: black 1px solid;*/
+    /*background-color: greenyellow;*/
+    background-image: url("main.jpg");
+    background-size: cover;
+    
+    
+    
+}
+
+
+.over-position{
+
+    /*display: flex;*/
+    /*width:inherit;
+    flex-direction: column;
+    position: absolute;
+    /*background-color: gold;*/
+    /*padding: 20px ;*/
+    /*justify-content: center;*/
+    /*align-content: center;*/
+
+} 
+
+.hero {
+    display: flex;
+    flex-direction: column;
+/*color: white;*/
+/*background-color: gray;*/
+align-items: start;
+justify-content: center;
+min-height: 400px;
+
+}
+
+.hero > * {
+    background: gold;
+    color: black;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.price1{
+    /*border: black 1px solid;*/
+    grid-row: 1 ;
+    grid-column: 2 ;
+    
+    background-color: gold;
+    text-align: center;
+    margin: 10px;
+    margin-top: 0;        
+    margin-right: 0;
+
+        
+}
+
+.price2{
+    background-color: gold;
+    grid-row: 2;
+    grid-column: 2;
+    text-align: center;
+    margin: 10px;        
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.price1 > h1 , .price2 > h1{
+    font-size: 40px;
+    padding-top: 10%;
+}
+.sections{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    margin-top: 20px;
+    /*border: 2px solid red;*/
+    justify-content: space-between;
+    
+    
+}
+
+.sections > div {
+    background-color: aliceblue;
+    /*width: 23%;*/
+    /*height: 100%;*/
+    align-self: center; /* دي اللي ظبطت الدنيا معايا */
+    max-width: 20%;
+    
+    text-align: center;
+    padding: 5px;
+    /*max-height: 90%;*/
+}
+.icon{ font-size: 50px; margin: 0;}
+
+.commercial{
+    /*border: solid 2px black;*/
+    height: auto;
+    margin-top: 20px;
+    background-color: ivory;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    grid-template-areas: photo desc;
+}
+
+.commercial-img {
+    width: auto;
+    
+}
+
+.commercial-desc > button {
+    padding: 5px 10px 5px 10px;
+    background-color: gold;
+    border: none;
+    box-shadow: 2px 2px 2px gray    ;
+}
+.commercial-desc{
+    text-align: center;
+    
+    font-weight: bold;
+    text-align: left;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+ /*   border: 2px solid slateblue;*/
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.hello{
+    
+text-align: center;
+}
+
+.gallery h1::before, .gallery h1::after {
+    display: block;
+    content: '';
+    height: 10px;
+    background: linear-gradient(to var(--direction, left), var(--yellow), transparent);
+}
+
+.gallery > img {
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 2px 2px 2px gray    ;
+}
